@@ -1,10 +1,12 @@
-export default class Cat {
-  readonly id: string;
+import { ICat } from 'store/_types/Cat';
+
+export default class Cat implements ICat {
+  readonly id: number;
   readonly name: string;
   readonly personality: string;
   readonly born: Date;
 
-  constructor(id: string, name: string, personality: string, born: Date) {
+  constructor({ id, name, personality, born }: ICat) {
     this.id = id;
     this.name = name;
     this.personality = personality;
