@@ -1,13 +1,21 @@
 import React, { FunctionComponent } from 'react';
 import HomeContainer from 'presentation/container/HomeContainer';
-import { CenterFlexLayout } from 'assets/style/Layout/FlexLayout';
+import styled from 'styled-components';
 
 const HomeView: FunctionComponent<{}> = () => {
   return (
-    <CenterFlexLayout style={{ height: `100%` }}>
+    <HomeFlexLayout>
       <HomeContainer />
-    </CenterFlexLayout>
+    </HomeFlexLayout>
   );
 };
+
+const HomeFlexLayout = styled.div`
+  height: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
 
 export default HomeView;

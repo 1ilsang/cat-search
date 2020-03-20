@@ -1,8 +1,13 @@
 import React, { FunctionComponent } from 'react';
-import { DefaultMarginLayout } from 'assets/style/Layout/Layout';
+import styled from 'styled-components';
 
 const CatSearchContainer: FunctionComponent<{}> = () => {
-  return <DefaultMarginLayout></DefaultMarginLayout>;
+  return <Layout></Layout>;
 };
+
+const Layout = styled.div`
+  margin-left: 10%;
+  margin-right: 10%;
+`;
 
 export default CatSearchContainer;

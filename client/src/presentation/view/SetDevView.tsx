@@ -2,16 +2,16 @@ import React, { FunctionComponent } from 'react';
 import NavigationContainer from 'presentation/container/NavigationContainer';
 import SetDevContainer from 'presentation/container/SetDevContainer';
 import FooterContainer from 'presentation/container/FooterContainer';
-import { DefaultFlexColumnLayout } from 'assets/style/Layout/FlexLayout';
+import { DefaultFlexLayout } from 'assets/style/FlexLayout';
 
 const SetDevView: FunctionComponent<{}> = () => {
   return (
     <>
       <NavigationContainer />
-      <DefaultFlexColumnLayout>
+      <DefaultFlexLayout>
         <SetDevContainer />
         <FooterContainer />
-      </DefaultFlexColumnLayout>
+      </DefaultFlexLayout>
     </>
   );
 };
