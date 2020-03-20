@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
-import { DefaultMarginContainer } from 'assets/style/Container';
+import { DefaultMarginLayout } from 'assets/style/Layout/Layout';
 
 const SetDevViewContainer: FunctionComponent<{}> = () => {
   const [isDev, setIsDev] = useState<boolean | null>();
@@ -20,13 +20,13 @@ const SetDevViewContainer: FunctionComponent<{}> = () => {
   };
 
   return (
-    <DefaultMarginContainer>
+    <DefaultMarginLayout>
       <h1>You can{isDev ? `` : `'t`} access Dev Path!</h1>
       <h2>
         Click <FontAwesomeIcon icon={faTools} color={`red`} /> !
       </h2>
       <button onClick={toggleDevSessionHandler}>Toggle Dev Session</button>
-    </DefaultMarginContainer>
+    </DefaultMarginLayout>
   );
 };
 

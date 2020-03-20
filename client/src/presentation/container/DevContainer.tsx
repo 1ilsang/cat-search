@@ -1,12 +1,19 @@
 import React, { FunctionComponent } from 'react';
-import { CenterContainer } from 'assets/style/Container';
+import { CenterFlexColumnLayout } from 'assets/style/Layout/FlexLayout';
 import AlpacaImg from 'assets/img/alpaca.jpg';
 
 const DevContainer: FunctionComponent<{}> = () => {
   return (
-    <CenterContainer>
+    <CenterFlexColumnLayout>
+      <h1>보물은 알파카였어오</h1>
       <img src={AlpacaImg} alt={`Ugly alpaca`} />
-    </CenterContainer>
+      <img src={AlpacaImg} alt={`Ugly alpaca`} />
+      <img src={AlpacaImg} alt={`Ugly alpaca`} />
+      <img src={AlpacaImg} alt={`Ugly alpaca`} />
+      <img src={AlpacaImg} alt={`Ugly alpaca`} />
+      <img src={AlpacaImg} alt={`Ugly alpaca`} />
+      <img src={AlpacaImg} alt={`Ugly alpaca`} />
+    </CenterFlexColumnLayout>
   );
 };
 

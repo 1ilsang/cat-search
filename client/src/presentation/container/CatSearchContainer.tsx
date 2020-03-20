@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
-import { DefaultMarginContainer } from 'assets/style/Container';
+import { DefaultMarginLayout } from 'assets/style/Layout/Layout';
 
 const CatSearchContainer: FunctionComponent<{}> = () => {
-  return <DefaultMarginContainer></DefaultMarginContainer>;
+  return <DefaultMarginLayout></DefaultMarginLayout>;
 };
 
 export default CatSearchContainer;
