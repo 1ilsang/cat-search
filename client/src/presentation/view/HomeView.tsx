@@ -1,7 +1,8 @@
 import React, { FunctionComponent } from 'react';
+import HomeContainer from 'presentation/container/HomeContainer';
 
 const HomeView: FunctionComponent<{}> = () => {
-  return <div>HomeView</div>;
+  return <HomeContainer />;
 };
 
 export default HomeView;

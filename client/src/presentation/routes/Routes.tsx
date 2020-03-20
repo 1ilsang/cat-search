@@ -14,8 +14,8 @@ const Routes: React.SFC<{}> = () => {
     <Router>
       <Switch>
         <Route exact={true} path="/" component={HomeView} />
-        <PrivateRoute path="/dev" component={DevView} />
         <Route path="/search" component={CatSearchView} />
+        <PrivateRoute path="/dev" component={DevView} />
         <Route path="/req-dev" component={SetDevView} />
         <Route component={NotFoundView} />
       </Switch>

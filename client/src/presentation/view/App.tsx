@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import Routes from 'presentation/routes/Routes';
+import { GlobalStyles } from 'assets/style/Global';
 
 const App: FunctionComponent<{}> = () => {
   console.info(
@@ -18,6 +19,7 @@ const App: FunctionComponent<{}> = () => {
 
   return (
     <>
+      <GlobalStyles />
       <Routes />
     </>
   );

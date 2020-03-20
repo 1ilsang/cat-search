@@ -1,1 +1,2 @@
-export const isDevMode = () => window.sessionStorage.getItem(`dev`) || false;
+export const isDevMode = () =>
+  window.sessionStorage.getItem(`isDev`) === `true` || false;
